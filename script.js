@@ -55,10 +55,12 @@ function debounce(func, wait, immediate) {
 	};
 };
 
+// Get weather function - links to my WeatherJS app
 const getWeather = debounce(function() {
 	window.open('https://blitz3r.github.io/weatherjs/', '_blank');
 }, 800);
 
+// Function to reload page
 const reloadPage = debounce(function() {
 	window.location.href = window.location.href;
 }, 800);
